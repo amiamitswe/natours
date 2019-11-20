@@ -1,0 +1,101 @@
+// color custom grid style 
+.row-color {
+  background-color: #eee;
+  [class^='col-'] {
+    background-color: $color-primary-light;
+    text-align: center;
+    font-size: 2rem;
+    color: $color-white;
+    padding: .5rem 0;
+  }
+}
+
+
+// custom grid style 
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearFix;
+
+  [class^='col-'] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  // col 3 division
+  .col-1-of-3 {
+    width: calc((100% - #{$gutter-horizontal * 2}) / 3);
+  }
+  
+  .col-2-of-3 {
+    width: calc(2 * ((100% - #{$gutter-horizontal * 2}) / 3) + #{$gutter-horizontal});
+  }
+
+  // col 4 division
+  .col-1-of-4 {
+    width: calc((100% - #{$gutter-horizontal * 3}) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(2 * ((100% - #{$gutter-horizontal * 3}) / 4) + #{$gutter-horizontal});
+  }
+
+  .col-3-of-4 {
+    width: calc(3 * ((100% - #{$gutter-horizontal * 3}) / 4) + (2 * #{$gutter-horizontal}));
+  }
+
+  // col 5 division
+  .col-1-of-5 {
+    width: calc((100% - #{$gutter-horizontal * 4}) / 5);
+  }
+
+  .col-2-of-5 {
+    width: calc(2 * ((100% - #{$gutter-horizontal * 4}) / 5) + #{$gutter-horizontal});
+  }
+
+  .col-3-of-5 {
+    width: calc(3 * ((100% - #{$gutter-horizontal * 4}) / 5) + (2 * #{$gutter-horizontal}));
+  }
+
+  .col-4-of-5 {
+    width: calc(4 * ((100% - #{$gutter-horizontal * 4}) / 5) + (3 * #{$gutter-horizontal}));
+  }
+
+  // col 6 division
+  .col-1-of-6 {
+    width: calc((100% - #{$gutter-horizontal * 5}) / 6);
+  }
+
+  .col-2-of-6 {
+    width: calc(2 * ((100% - #{$gutter-horizontal * 5}) / 6) + #{$gutter-horizontal});
+  }
+
+  .col-3-of-6 {
+    width: calc(3 * ((100% - #{$gutter-horizontal * 5}) / 6) + (2 * #{$gutter-horizontal}));
+  }
+
+  .col-4-of-6 {
+    width: calc(4 * ((100% - #{$gutter-horizontal * 5}) / 6) + (3 * #{$gutter-horizontal}));
+  }
+
+  .col-5-of-6 {
+    width: calc(5 * ((100% - #{$gutter-horizontal * 5}) / 6) + (4 * #{$gutter-horizontal}));
+  }
+}
