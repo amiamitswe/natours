@@ -125,10 +125,7 @@
     // back side style
 
   &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include centerContent;
     width: 90%;
     text-align: center;
   }

@@ -19,17 +19,19 @@
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-    <label for="navi-toggle" class="navigation__button">MENU</label>
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
 
     <div class="navigation__background">&nbsp;</div>
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Your Banifits</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>YOUR BENEFITS</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
       </ul>
     </nav>
   </div>
@@ -60,14 +62,12 @@
       <div class="row">
         <div class="col-1-of-2">
           <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio
             voluptatem totam quaerat laudantium?
           </p>
 
           <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like You never have before</h3>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio
             voluptatem totam quaerat laudantium?
           </p>
 
@@ -91,42 +91,36 @@
           <div class="feature-box">
             <i class="fal fa-globe-asia feature-box__icon"></i>
             <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam
-              autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
+            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
           </div>
         </div>
         <div class="col-1-of-4">
           <div class="feature-box">
             <i class="fal fa-compass feature-box__icon"></i>
             <h3 class="heading-tertiary u-margin-bottom-small">meet nature</h3>
-            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam
-              autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
+            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
           </div>
         </div>
         <div class="col-1-of-4">
           <div class="feature-box">
             <i class="fal fa-map-marked-alt feature-box__icon"></i>
             <h3 class="heading-tertiary u-margin-bottom-small">find your way</h3>
-            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam
-              autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
+            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
           </div>
         </div>
         <div class="col-1-of-4">
           <div class="feature-box">
             <i class="fal fa-heart feature-box__icon"></i>
             <h3 class="heading-tertiary u-margin-bottom-small">live a healthier life</h3>
-            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam
-              autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
+            <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium?</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">
-          Most popular tours
-        </h2>
+        <h2 class="heading-secondary">Most popular tours</h2>
       </div>
 
       <div class="row">
@@ -155,7 +149,7 @@
                   <p class="card__price-value">$299</p>
                 </div>
 
-                <a href="#" class="btn btn--white">Book now</a>
+                <a href="#popup" class="btn btn--white">Book now</a>
               </div>
             </div>
           </div>
@@ -186,7 +180,7 @@
                   <p class="card__price-value">$499</p>
                 </div>
 
-                <a href="#" class="btn btn--white">Book now</a>
+                <a href="#popup" class="btn btn--white">Book now</a>
               </div>
             </div>
           </div>
@@ -217,7 +211,7 @@
                   <p class="card__price-value">$899</p>
                 </div>
 
-                <a href="#" class="btn btn--white">Book now</a>
+                <a href="#popup" class="btn btn--white">Book now</a>
               </div>
             </div>
           </div>
@@ -240,9 +234,7 @@
       </div>
 
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">
-          we make people really happy
-        </h2>
+        <h2 class="heading-secondary">we make people really happy</h2>
       </div>
 
       <div class="row">
@@ -253,7 +245,6 @@
           </figure>
           <div class="story__text">
             <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
-
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam
               autem qui tenetur odio voluptatem totam quaerat laudantium? Nulla assumenda ullam
               autem qui tenetur odio voluptatem totam quaerat laudantium. Nulla assumenda ullam
@@ -269,7 +260,6 @@
           </figure>
           <div class="story__text">
             <h3 class="heading-tertiary u-margin-bottom-small">WOW! my life is compleately deiifernt now</h3>
-
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda ullam
               autem qui tenetur odio voluptatem totam quaerat laudantium? Nulla assumenda ullam
               autem qui tenetur odio voluptatem totam quaerat laudantium. Nulla assumenda ullam
@@ -291,9 +281,7 @@
             <form class="form" action="#">
 
               <div class="u-margin-bottom-medium">
-                <h2 class="heading-secondary">
-                  start booking now
-                </h2>
+                <h2 class="heading-secondary">start booking now</h2>
               </div>
 
               <div class="form__group">
@@ -353,11 +341,31 @@
       </div>
       <div class="col-1-of-2">
         <p class="footer__copyright">
-          &copy; Copy right 2019 <a href="#" class="footer__link"> Amit </a> Lorem ipsum dolor sit amet consectetur <a href="#" class="footer__link"> Github </a> adipisicing elit. Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium? Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium. Nulla assumenda ullam autem qui tenetur.
+          &copy; Copy right 2019 <a href="#" class="footer__link"> Amit </a> Lorem ipsum dolor sit amet consectetur 
+          <a href="#" class="footer__link"> Github </a> adipisicing elit. Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium? Nulla assumenda ullam autem qui tenetur odio voluptatem totam quaerat laudantium. Nulla assumenda ullam autem qui tenetur.
         </p>
       </div>
     </div>
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="./img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+        <img src="./img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+      </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">start booking kow</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Importent &ndash; please read these terms and condition before booking</h3>
+        <p class="popup__text ">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+        </p>
+
+        <a href="#" class="btn btn--green">Book Now</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 
