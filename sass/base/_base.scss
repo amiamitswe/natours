@@ -11,11 +11,11 @@ html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
 
   
-  @include respond(tab_land) { // width < 900?
+  @include respond(tab_land) { // width < 1200?
     font-size: 56.25%; //1rem = 9px; 9/16 = 56.25%
   }
 
-  @include respond(tab_port) { // width < 600?
+  @include respond(tab_port) { // width < 900?
     font-size: 50%; //1rem = 8px; 8/16 = 50%
   }
 
@@ -26,4 +26,9 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab_port) {
+    padding: 0;
+  }
 }
