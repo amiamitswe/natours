@@ -76,9 +76,33 @@
 
         <div class="col-1-of-2">
           <div class="composition">
-            <img src="./img/nat-1-large.jpg" alt="Photo-1" class="composition__photo composition__photo--p1">
-            <img src="./img/nat-2-large.jpg" alt="Photo-2" class="composition__photo composition__photo--p2">
-            <img src="./img/nat-3-large.jpg" alt="Photo-3" class="composition__photo composition__photo--p3">
+
+            <img 
+              srcset="./img/nat-1.jpg 300w, ./img/nat-1-large.jpg 100w"
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+              src="./img/nat-1-large.jpg" 
+              alt="Photo-1"
+              class="composition__photo composition__photo--p1">
+
+            <img 
+              srcset="./img/nat-2.jpg 300w, ./img/nat-2-large.jpg 100w"
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+              src="./img/nat-2-large.jpg" 
+              alt="Photo-2"
+              class="composition__photo composition__photo--p2">
+
+            <img 
+              srcset="./img/nat-3.jpg 300w, ./img/nat-3-large.jpg 100w"
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+              src="./img/nat-3-large.jpg" 
+              alt="Photo-3"
+              class="composition__photo composition__photo--p3">
+
+              <!--
+              <img src="./img/nat-1-large.jpg" alt="Photo-1" class="composition__photo composition__photo--p1">
+              <img src="./img/nat-2-large.jpg" alt="Photo-2" class="composition__photo composition__photo--p2">
+              <img src="./img/nat-3-large.jpg" alt="Photo-3" class="composition__photo composition__photo--p3">
+              -->
           </div>
         </div>
       </div>
@@ -240,7 +264,14 @@
       <div class="row">
         <div class="story">
           <figure class="story__shape">
-            <img class="story__img" src="img/nat-8.jpg" alt="user">
+            <img 
+              srcset="./img/nat-8.jpg 500w, ./img/nat-8-large.jpg 1000w" 
+              sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 40vw, 300px"
+              class="story__img" 
+              src="img/nat-8.jpg" 
+              alt="user">
+            <!-- <img class="story__img" src="img/nat-8.jpg" alt="user"> -->
+
             <figcaption class="story__caption">Mary Smith</figcaption>
           </figure>
           <div class="story__text">
@@ -255,7 +286,13 @@
       <div class="row">
         <div class="story">
           <figure class="story__shape">
-            <img class="story__img" src="img/nat-9.jpg" alt="user">
+            <img 
+              srcset="./img/nat-9.jpg 500w, ./img/nat-9-large.jpg 1000w" 
+              sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 40vw, 300px"
+              class="story__img" 
+              src="img/nat-9.jpg" 
+              alt="user">
+            <!-- <img class="story__img" src="img/nat-9.jpg" alt="user"> -->
             <figcaption class="story__caption">Jack Smith</figcaption>
           </figure>
           <div class="story__text">
@@ -324,7 +361,15 @@
 
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
+ 
+      <picture class="footer__logo">
+        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+                media="(max-width: 37.5em)">
+        <img 
+          srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" 
+          alt="Full Logo" 
+          src="img/logo-green-2x.png">
+      </picture>
     </div>
 
     <div class="row">
@@ -351,15 +396,30 @@
   <div class="popup" id="popup">
     <div class="popup__content">
       <div class="popup__left">
-        <img src="./img/nat-8.jpg" alt="Tour Photo" class="popup__img">
-        <img src="./img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+        <img 
+          srcset="./img/nat-8.jpg 500w, ./img/nat-8-large.jpg 1000w" 
+          sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 40vw, 300px"
+          alt="Tour Photo"
+          src="./img/nat-8-large.jpeg"
+          class="popup__img">
+
+          <img 
+          srcset="./img/nat-9.jpg 500w, ./img/nat-9-large.jpg 1000w" 
+          sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 40vw, 300px"
+          alt="Tour Photo"
+          src="./img/nat-9-large.jpeg"
+          class="popup__img">
+
+        <!-- <img src="./img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+        <img src="./img/nat-9.jpg" alt="Tour Photo" class="popup__img"> -->
+
       </div>
       <div class="popup__right">
         <a href="#section-tours" class="popup__close">&times;</a>
         <h2 class="heading-secondary u-margin-bottom-small">start booking kow</h2>
         <h3 class="heading-tertiary u-margin-bottom-small">Importent &ndash; please read these terms and condition before booking</h3>
         <p class="popup__text ">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
         </p>
 
         <a href="#" class="btn btn--green">Book Now</a>

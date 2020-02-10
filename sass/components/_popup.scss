@@ -17,6 +17,14 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 
+  
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+  }
+
   &__content {
     @include centerContent;
 
@@ -44,6 +52,11 @@
   &__left {
     width: 33.3333333%;
     display: table-cell;
+
+    @include respond (tab_land) {
+      width: 50%;
+      display: flex;
+    }
   }
 
   &__right {
@@ -51,6 +64,15 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond (tab_land) {
+      width: 100%;
+      display: block;
+    }
+
+    @include respond (phone) {
+      padding: 1rem 2rem 2rem;
+    }
   }
 
   &__text {
@@ -72,6 +94,12 @@
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+
+    @include respond (phone) {
+      column-count: 1;
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__img {
