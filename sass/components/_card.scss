@@ -176,7 +176,9 @@
 
   // media query for card-----------------------
 
-  @include respond(tab_port) {
+  // @include respond(tab_port) {
+    @media only screen and (max-width: 56.25em),
+        only screen and (hover:none) {
     height: auto;
     border-radius: $default-border-dadius;
     background-color: $color-white;
@@ -186,8 +188,6 @@
       height: auto;
       position: relative;
       box-shadow: none;
-
-
 
       &--back {
         transform: rotateY(0);
